@@ -1,5 +1,5 @@
-require 'github/content'
-require 'github/team'
+require 'github_api/content'
+require 'github_api/team'
 require 'json'
 
 module Github

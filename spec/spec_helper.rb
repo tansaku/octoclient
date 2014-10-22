@@ -1,4 +1,4 @@
-require './lib/github'
+require './lib/github_api'
 require './spec/github_stubs.rb'
 require 'webmock/rspec'
 
