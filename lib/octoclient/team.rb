@@ -1,4 +1,4 @@
-module Github
+module OctoClient
   class TeamAPI
 
     # https://developer.github.com/v3/orgs/teams/#list-user-teams
@@ -9,7 +9,7 @@ module Github
     # this and above not currently tested 
     # used for unsupported /teams feature
     def self.user_teams(user_token)
-      Github::get user_teams_url(user_token)
+      OctoClient::get user_teams_url(user_token)
     end
 
     # not currently used
@@ -32,7 +32,7 @@ module Github
             "#{repo_name}"
           ]
       }
-      Github::post org_teams_url(org_name), post_body
+      OctoClient::post org_teams_url(org_name), post_body
     end
 
     # https://developer.github.com/v3/orgs/teams/#get-team-member
@@ -42,7 +42,7 @@ module Github
 
     # https://developer.github.com/v3/orgs/teams/#add-team-member
     def self.add_team_member(team_id, username)
-      Github::put team_member_url(team_id, username), ''
+      OctoClient::put team_member_url(team_id, username), ''
     end
   end
 end

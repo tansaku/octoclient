@@ -1,4 +1,4 @@
-module Github
+module OctoClient
   class ContentAPI
 
     # TODO REFACTOR LIKE SO
@@ -23,7 +23,7 @@ module Github
     end
 
     def self.get_content username, repo_name, path 
-      Github::get self.content_url username, repo_name, path 
+      OctoClient::get self.content_url username, repo_name, path 
     end
 
     def self.update_content username, repo_name, path, commit_message, content, sha, branch = 'master'
@@ -32,7 +32,7 @@ module Github
            "content": "#{Base64.strict_encode64 content}",
            "sha": "#{sha}"
       }}
-      Github::put(content_url(username, repo_name, path), put_body)  
+      OctoClient::put(content_url(username, repo_name, path), put_body)  
     end
 
     def self.create_content username, repo_name, path, commit_message, content, branch = 'master' 
@@ -40,7 +40,7 @@ module Github
            "message": "#{commit_message}",
            "content": "#{Base64.strict_encode64 content}"
       }}
-      Github::put(content_url(username, repo_name, path), put_body)  
+      OctoClient::put(content_url(username, repo_name, path), put_body)  
     end
 
     def self.append_content username, repo_name, path, commit_message, append, branch = 'master'

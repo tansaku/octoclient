@@ -1,5 +1,5 @@
-require './lib/github_api'
-require './spec/github_stubs.rb'
+require './lib/octoclient'
+require './spec/octoclient_stubs.rb'
 require 'webmock/rspec'
 
 
@@ -20,7 +20,7 @@ require 'webmock/rspec'
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
-  include GithubStubs
+  include OctoClientStubs
 
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest

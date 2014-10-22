@@ -1,8 +1,8 @@
-require 'github_api/content'
-require 'github_api/team'
+require 'octoclient/content'
+require 'octoclient/team'
 require 'json'
 
-module Github
+module OctoClient
 
   ASSETS = 'https://assets-cdn.github.com/images/icons/emoji/'
   ACCESS_PARAMS = "?access_token=#{ENV['GITHUB_ACCESS_TOKEN']}&client_id=#{ENV['GITHUB_CLIENT_ID']}&client_secret=#{ENV['GITHUB_CLIENT_SECRET']}"
