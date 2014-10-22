@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.github.com/orgs/AgileVentures/teams?access_token=<GITHUB_ACCESS_TOKEN>&client_id=<GITHUB_CLIENT_ID>&client_secret=<GITHUB_CLIENT_SECRET>
+    uri: https://api.github.com/orgs/AgileVentures/teams?access_token=GITHUB_ACCESS_TOKEN&client_id=GITHUB_CLIENT_ID&client_secret=GITHUB_CLIENT_SECRET
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Wed, 22 Oct 2014 15:07:58 GMT
+      - Wed, 22 Oct 2014 15:11:07 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -33,7 +33,7 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4998'
+      - '4997'
       X-Ratelimit-Reset:
       - '1413993244'
       Cache-Control:
@@ -63,18 +63,18 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       X-Github-Request-Id:
-      - 259D239A:2DD0:376159F:5447C84D
+      - 259D239A:6422:1EF4C61:5447C90B
       Strict-Transport-Security:
       - max-age=31536000; includeSubdomains; preload
       X-Content-Type-Options:
       - nosniff
       X-Served-By:
-      - 62a1303ae95931e56e387e87d354bb24
+      - 88d924ed861736d2749ce1a55766cb53
     body:
       encoding: UTF-8
       string: '[{"name":"Owners","id":462971,"slug":"owners","permission":"admin","url":"https://api.github.com/teams/462971","members_url":"https://api.github.com/teams/462971/members{/member}","repositories_url":"https://api.github.com/teams/462971/repos"},{"name":"AutoGraders","id":747558,"slug":"autograders","permission":"admin","url":"https://api.github.com/teams/747558","members_url":"https://api.github.com/teams/747558/members{/member}","repositories_url":"https://api.github.com/teams/747558/repos"},{"name":"Codealia
         team","id":730835,"slug":"codealia-team","permission":"admin","url":"https://api.github.com/teams/730835","members_url":"https://api.github.com/teams/730835/members{/member}","repositories_url":"https://api.github.com/teams/730835/repos"},{"name":"Community
         Portal Team","id":882227,"slug":"community-portal-team","permission":"admin","url":"https://api.github.com/teams/882227","members_url":"https://api.github.com/teams/882227/members{/member}","repositories_url":"https://api.github.com/teams/882227/repos"},{"name":"LocalSupport","id":779950,"slug":"localsupport","permission":"admin","url":"https://api.github.com/teams/779950","members_url":"https://api.github.com/teams/779950/members{/member}","repositories_url":"https://api.github.com/teams/779950/repos"},{"name":"OSRA","id":786133,"slug":"osra","permission":"admin","url":"https://api.github.com/teams/786133","members_url":"https://api.github.com/teams/786133/members{/member}","repositories_url":"https://api.github.com/teams/786133/repos"},{"name":"Services","id":799173,"slug":"services","permission":"pull","url":"https://api.github.com/teams/799173","members_url":"https://api.github.com/teams/799173/members{/member}","repositories_url":"https://api.github.com/teams/799173/repos"},{"name":"Venturers","id":572680,"slug":"venturers","permission":"pull","url":"https://api.github.com/teams/572680","members_url":"https://api.github.com/teams/572680/members{/member}","repositories_url":"https://api.github.com/teams/572680/repos"}]'
     http_version: 
-  recorded_at: Wed, 22 Oct 2014 15:07:58 GMT
+  recorded_at: Wed, 22 Oct 2014 15:11:07 GMT
 recorded_with: VCR 2.9.3
