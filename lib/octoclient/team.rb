@@ -23,6 +23,10 @@ module OctoClient
       "#{API_URL}/orgs/#{org_name}/teams#{ACCESS_PARAMS}"
     end
 
+    def self.org_teams(org_name)
+      OctoClient::get org_teams_url(org_name)
+    end
+
     # https://developer.github.com/v3/orgs/teams/#create-team
     def self.create_team(org_name, team_name, repo_name, permission = 'pull')
       post_body = %Q{{"name": "#{team_name}"}}

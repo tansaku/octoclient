@@ -16,4 +16,12 @@ describe OctoClient::TeamAPI do
     response = OctoClient::TeamAPI.add_team_member('1324354', 'tansaku')
     expect(response).to eq nil
   end
+
+  it '.org_teams' do
+    VCR.use_cassette('org_teams_agileventures') do
+      response = OctoClient::TeamAPI.org_teams('AgileVentures')
+      expect(response.first['id']).to eq 462971
+      expect(response[1]['id']).to eq 747558
+    end
+  end
 end

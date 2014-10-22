@@ -1,6 +1,9 @@
+require 'dotenv'
+Dotenv.load
 require 'octoclient/content'
 require 'octoclient/team'
 require 'json'
+
 
 module OctoClient
 
