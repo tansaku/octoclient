@@ -9,5 +9,6 @@ Gem::Specification.new do |s|
   s.files       = ["lib/github.rb","lib/github/content.rb","lib/github/team.rb"]
   s.homepage    =
     'http://rubygems.org/gems/github_api'
+  s.require_paths = ["lib"] 
   s.license       = 'MIT'
 end
