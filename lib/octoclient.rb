@@ -92,8 +92,8 @@ module OctoClient
       {
         "message": "#{message}",
         "author": {
-          "name": "Sam Joseph",
-          "email": "tansaku@gmail.com"
+          "name": "OctoClient",
+          "email": "octoclient@github.com"
         },
         "parents": ["#{parent_commit_sha}"],
         "tree": "#{tree_sha}"
